@@ -1,3 +1,4 @@
+import 'package:chat_flutter/Constants.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_chat_bubble/bubble_type.dart';
 import 'package:flutter_chat_bubble/chat_bubble.dart';
@@ -11,7 +12,7 @@ class ChatBubbleUtils {
         clipper: ChatBubbleClipper4(type: BubbleType.sendBubble),
         alignment: Alignment.topRight,
         margin: EdgeInsets.only(top: 8, bottom: 8),
-        backGroundColor: CupertinoColors.systemBlue,
+        backGroundColor: Constants.primaryColor,
         child: Container(
           constraints: BoxConstraints(
             maxWidth: MediaQuery.of(context).size.width * 0.7,

@@ -1,3 +1,4 @@
+import 'package:chat_flutter/Constants.dart';
 import 'package:chat_flutter/chat_bubble_utils.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/cupertino.dart';
@@ -140,7 +141,7 @@ class ChatWidgetState extends State<ChatWidget> with WidgetsBindingObserver {
                     },
                     padding: EdgeInsets.all(0.0),
                     child: Image(
-                      color: CupertinoColors.systemBlue,
+                      color: Constants.primaryColor,
                       image: AssetImage('assets/images/plus.png'),
                       height: 30,
                       width: 30,
@@ -188,7 +189,7 @@ class ChatWidgetState extends State<ChatWidget> with WidgetsBindingObserver {
                     padding: EdgeInsets.all(0.0),
                     child: Image(
                       color: _hasValue
-                          ? CupertinoColors.systemBlue
+                          ? Constants.primaryColor
                           : CupertinoColors.inactiveGray,
                       image: AssetImage('assets/images/send.png'),
                       height: 30,
@@ -200,7 +201,7 @@ class ChatWidgetState extends State<ChatWidget> with WidgetsBindingObserver {
           Visibility(
               visible: _showToolbox,
               child: Container(
-                color: CupertinoColors.systemGrey6,
+                color: CupertinoColors.systemGrey5,
                 height: 200,
                 padding: EdgeInsets.all(16.0),
                 child: Row(

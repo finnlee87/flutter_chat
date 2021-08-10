@@ -30,7 +30,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_chat_ui: ^1.1.9
   image_picker: ^0.8.2
-  arkit_plugin: ^1.0.1
+  #  arkit_plugin: ^1.0.1
   flutter_chat_bubble: ^1.0.2
   wechat_assets_picker: ^5.5.8
   wechat_camera_picker: ^2.2.0

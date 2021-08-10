@@ -1,5 +1,6 @@
 import 'package:chat_flutter/pages/chat_page.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 void main() => runApp(CupertinoApp(home: MyApp()));
 
@@ -14,11 +15,11 @@ class MyApp extends StatelessWidget {
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.search),
+            icon: Icon(CupertinoIcons.chat_bubble),
             label: 'Chat',
           ),
           BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.shopping_cart),
+            icon: Icon(CupertinoIcons.profile_circled),
             label: 'My',
           ),
         ],
@@ -49,8 +50,9 @@ class MyApp extends StatelessWidget {
                 child: Container(),
               );
             });
+          default:
+            return Container();
         }
-        return Container();
       },
     );
   }
